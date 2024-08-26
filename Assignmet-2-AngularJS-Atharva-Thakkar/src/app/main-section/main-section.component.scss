@@ -1,0 +1,52 @@
+// Mixin to apply flex display and centralize all child content
+@mixin flexCenter {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+// Styles for the main section
+.main-body {
+  @include flexCenter(); /* Apply flexCenter mixin */
+  row-gap: 20px; /* Add gap between rows */
+
+  // Styles for each block of question
+  .block {
+    @include flexCenter(); /* Apply flexCenter mixin */
+    gap: 10px; /* Add gap between child elements */
+    padding: 1rem; /* Add padding around the block */
+    margin: 1.1rem; /* Add margin around the block */
+  }
+
+  // Styles for responsive dynamic div
+  .showUserInputDiv {
+    word-break: break-word; /* Break words to prevent overflow */
+  }
+
+  // Styles to adjust input label
+  .user-input-label {
+    display: flex; /* Use flexbox for label */
+    justify-content: space-evenly; /* Evenly space items horizontally */
+  }
+
+  // Styles for success message
+  .success {
+    color: green; /* Set text color to green */
+    font-style: italic; /* Italicize text */
+    font-weight: normal; /* Set font weight to normal */
+  }
+
+  // Styles for error message
+  .error {
+    color: red; /* Set text color to red */
+    font-style: normal; /* Set font style to normal */
+    font-weight: bold; /* Set font weight to bold */
+  }
+}
+
+// Additional styles for the showUserInputDiv class
+.showUserInputDiv {
+  word-break: break-word; /* Break words to prevent overflow */
+  text-align: left; /* Align the text to the left */
+}

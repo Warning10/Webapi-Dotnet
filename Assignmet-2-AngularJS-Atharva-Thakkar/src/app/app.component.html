@@ -1,0 +1,19 @@
+<main>
+    <div class="main-container">
+        <!-- Top Bar -->
+        <div class="top-bar bg-dark">
+            <app-top-bar></app-top-bar>
+        </div>
+        <!-- Flex container for Sidebar and Main Section -->
+        <div class="content ">
+            <!-- Sidebar -->
+            <div class="side-bar ">
+                <app-side-bar></app-side-bar>
+            </div>
+            <!-- Main Section -->
+            <div class="main-section m-3 ">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</main>

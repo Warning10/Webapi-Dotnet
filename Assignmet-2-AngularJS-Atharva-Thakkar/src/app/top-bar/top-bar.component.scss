@@ -1,0 +1,41 @@
+/* Styling for the welcome message */
+h2.welcome-message {
+  color: rgb(242, 239, 239);
+  font-size: 24px;
+  margin-left: 20px;
+
+  /* Make the welcome message responsive */
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+
+/* Styling for the animated label */
+.animated-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  transition: transform 0.3s ease;
+
+  /* Make the animated label responsive */
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* Hover effect for the animated label */
+.animated-label:hover {
+  transform: translateY(-3px);
+
+  /* Make the hover effect responsive */
+  @media (max-width: 768px) {
+    transform: translateY(0);
+    background-color: #cfcfcf;
+    color: rgb(39, 83, 148);
+  }
+}
