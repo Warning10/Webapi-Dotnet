@@ -1,0 +1,54 @@
+// Import Bootstrap CSS
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+// Reset padding and margin for all elements
+* {
+   padding: 0;
+   margin: 0;
+}
+
+// Set height of html and body to 100%
+html, body {
+   height: 100%;
+}
+
+// Reset margin and set font family
+body {
+   margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// CSS to center an element vertically and horizontally
+.makeItMiddle {
+   transform: translate(-50%, -250%);
+}
+
+// Styles for Angular Material dialog container
+.mat-dialog-container {
+   display: flex !important;
+   flex-direction: column;
+}
+
+// Styles for children of Angular Material dialog container
+.mat-dialog-container > * {
+   display: flex;
+   flex-direction: column;
+}
+
+// Styles for Angular Material dialog content
+.mat-dialog-content {
+   max-height: inherit !important;
+}
+
+// Styles for Angular Material dialog actions
+.mat-dialog-actions {
+   display: block !important;
+   flex-grow: inherit;
+   flex-shrink: inherit;
+   padding: 12px 0 0 !important;
+
+   // Remove margin bottom for last child
+   &:last-child {
+       margin-bottom: 0 !important;
+   }
+}

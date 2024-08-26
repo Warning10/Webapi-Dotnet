@@ -1,0 +1,21 @@
+<div class="d-flex flex-row p-2 m-2 justify-content-center align-items-center">
+  
+    <!-- Display name -->
+    <div class="h5 name">{{name}}</div>
+    
+    <!-- Increment and decrement buttons -->
+    <div class="d-flex flex-row m-2 dis justify-content-around align-items-center">
+      <!-- Decrement button -->
+      <button class="btn btn-secondary button" (click)="dec()">-</button>
+      
+      <!-- Display value -->
+      <div class="h5">{{val}}</div>
+      
+      <!-- Increment button -->
+      <button class="btn btn-secondary button" (click)="inc()">+</button>
+    </div>
+    
+    <!-- Label indicating this is a child component -->
+    <small>Child</small>
+  </div>
+  

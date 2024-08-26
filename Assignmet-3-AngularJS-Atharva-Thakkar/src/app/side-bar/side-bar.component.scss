@@ -1,0 +1,41 @@
+/* Styles for the side bar */
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  
+    /* Making the sidebar responsive using media queries */
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+  
+  /* Styles for animated labels */
+  .animated-label {
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+  
+    /* Making the labels responsive */
+    @media (max-width: 768px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Styles for label hover effect */
+  .animated-label:hover {
+    background-color: #cfcfcf;
+    color: rgb(39, 83, 148);
+    transform: translateY(-3px);
+  }

@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-center flex-column">
+  
+    <!-- Header -->
+    <div class="d-flex flex-column justify-content-center">
+      <h2 class="d-flex justify-content-center">Emitter Example </h2>
+      <h4 class="m-3">Parent</h4>
+    </div>
+    
+    <!-- Counter components for burgers and pizzas -->
+    <div class="border rounded m-3">
+      <app-counter [val]="burgers" [name]="'Burger'" (changed)="burgersChanged($event)"></app-counter>
+      <app-counter [val]="pizzas" [name]="'Pizza'" (changed)="pizzasChanged($event)"></app-counter>
+    </div>
+    
+    <!-- Total items display -->
+    <div class="d-flex justify-content-center border rounded m-3 p-3">
+      <b class="h3">
+        Total items: {{totalItems}}
+      </b>
+    </div>
+  </div>
+  

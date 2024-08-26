@@ -1,0 +1,20 @@
+<!-- main-section -->
+<main class="main-body">
+  <!-- Section: Display name using interpolation -->
+  <div class="mt-3">
+    <!-- Title -->
+    <h1>Parent Container</h1>
+    
+    <!-- Input field for entering message -->
+    <input [(ngModel)]="parentMessage" type="text" class="form-control" placeholder="Enter a Message" maxlength="50" />
+    
+    <!-- Display message from child -->
+    <p class="mt-2">Message from Child: {{ childMessage }}</p>
+  </div>
+
+  <!-- Operation-1 -->
+  <div class="d-flex flex-row">
+    <!-- Child component for interaction -->
+    <app-component-interaction [message]="parentMessage" (messageChanged)="onMessageChanged($event)"></app-component-interaction>
+  </div>
+</main>

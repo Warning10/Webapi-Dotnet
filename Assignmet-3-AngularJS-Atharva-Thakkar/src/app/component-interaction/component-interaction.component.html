@@ -1,0 +1,20 @@
+<div class="input-group input-group-lg p-4 d-flex flex-column justify-content-center border rounded py-5">
+  
+  <!-- Title -->
+  <div class="d-flex justify-content-center">
+    <p>Message from Parent: {{ message }}</p>
+  </div>
+  <div class="d-flex justify-content-center">
+    <h4 class="border rounded p-2 px-4 bg-secondary text-light">CHILD</h4>
+  </div>
+  
+  <!-- Input fields -->
+  <div class="d-flex justify-content-center mt-4">
+    <input [(ngModel)]="childMessage" type="text" class="form-control mx-2" placeholder="Enter a Message" maxlength="50" />
+  </div>
+  
+  <!-- Button -->
+  <div class="input-group d-flex justify-content-center mt-5">
+    <button (click)="sendMessage()" class="btn btn-outline-secondary btn-md px-5 py-1" type="button">Submit</button>
+  </div>
+</div>

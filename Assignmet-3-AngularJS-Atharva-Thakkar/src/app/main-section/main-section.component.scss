@@ -1,0 +1,48 @@
+// Mixin to define flex display and centralize all child content
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styles for the main-section
+.main-body {
+  // Apply mixin to center child content
+  @include flexCenter();
+  row-gap: 20px;
+
+  // Styles for each block of question
+  .block {
+    // Apply mixin to center child content
+    @include flexCenter();
+    gap: 10px;
+    padding: 1rem;
+    margin: 1.1rem;
+  }
+
+  // Styles for responsive dynamic div
+  .showUserInputDiv {
+    word-break: break-word;
+  }
+
+  // Adjust input label
+  .user-input-label {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  // Styles for success message
+  .success {
+    color: green;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  // Styles for error message
+  .error {
+    color: red;
+    font-style: normal;
+    font-weight: bold;
+  }
+}

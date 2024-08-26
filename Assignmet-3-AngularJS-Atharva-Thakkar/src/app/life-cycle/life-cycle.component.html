@@ -1,0 +1,30 @@
+<div class="d-flex justify-content-center">
+    <!-- Title -->
+    <h2>Life Cycle Hook</h2>
+  </div>
+  
+  <!-- Actions section -->
+  <div class="border rounded m-3 p-2">
+    <div class="d-flex justify-content-center">
+      <h4>Actions</h4>
+    </div>
+    <div class="d-flex flex-row justify-content-around">
+      <!-- Button -->
+      <input type="button" id="clickMe" name="clickMe" class="btn btn-secondary" (click)="btnClick()" value="Click Me">
+  
+      <!-- Input field -->
+      <div class="d-flex justify-content-center">
+        <input [(ngModel)]="textMsg" type="text" class="form-control mx-2" placeholder="Enter a Message" maxlength="30"/>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Messages section -->
+  <div class="border rounded m-3 p-2">
+    <p>Messages:</p>
+    <!-- List of lifecycle messages -->
+    <ol class="lifeCycle overflow-auto bg-secondary text-light rounded m-3" reversed>
+      <li *ngFor="let calledHook of lifecycleMessages" class="p-1">{{ calledHook }}</li>
+    </ol>
+  </div>
+  

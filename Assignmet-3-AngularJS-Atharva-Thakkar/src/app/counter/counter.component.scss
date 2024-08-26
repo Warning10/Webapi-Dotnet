@@ -1,0 +1,30 @@
+/* Set minimum width for buttons */
+.button {
+    min-width: 4rem;
+}
+
+/* Set minimum width for display area */
+.dis {
+    min-width: 16rem;
+}
+
+/* Set minimum width for name */
+.name {
+    min-width: 5rem;
+}
+
+/* Media query for screens up to 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust minimum width for buttons */
+    .button {
+        min-width: 3rem;
+    }
+    /* Adjust minimum width for display area */
+    .dis {
+        min-width: 10rem;
+    }
+    /* Adjust minimum width for name */
+    .name {
+        min-width: 3rem;
+    }
+}
